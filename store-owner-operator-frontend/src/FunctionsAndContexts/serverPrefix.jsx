@@ -1,0 +1,1 @@
+export const BACKEND_PREFIX = "http://localhost:5001"

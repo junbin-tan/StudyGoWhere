@@ -1,0 +1,189 @@
+.busyness .ellipse {
+    background-color: var(--chill-green);
+    position: absolute;
+  }
+  
+  .busyness .text-wrapper {
+    color: var(--chill-green);
+    font-family: "Google Sans-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 12px;
+    position: absolute;
+  }
+  
+  .busyness .overlap-group {
+    position: relative;
+  }
+  
+  .busyness .rectangle {
+    background-color: #ffffff;
+    border-radius: 5px;
+    left: 0;
+    position: absolute;
+  }
+  
+  .busyness .div {
+    position: absolute;
+  }
+  
+  .busyness .busy {
+    font-family: "Google Sans-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 12px;
+    position: absolute;
+  }
+  
+  .busyness.level-1 {
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .busyness.large {
+    height: 20px;
+    width: 77px;
+  }
+  
+  .busyness.small {
+    height: 14px;
+    width: 52px;
+  }
+  
+  .busyness.large .ellipse {
+    border-radius: 4px;
+    height: 8px;
+    left: 9px;
+    top: 6px;
+    width: 8px;
+  }
+  
+  .busyness.small .ellipse {
+    border-radius: 3px;
+    height: 6px;
+    left: 6px;
+    top: 4px;
+    width: 6px;
+  }
+  
+  .busyness.large .text-wrapper {
+    font-size: 12px;
+    left: 22px;
+    top: 2px;
+    width: 70px;
+  }
+  
+  .busyness.small .text-wrapper {
+    font-size: 8px;
+    left: 15px;
+    top: -1px;
+    white-space: nowrap;
+  }
+  
+  .busyness.large .overlap-group {
+    height: 20px;
+    width: 91px;
+  }
+  
+  .busyness.small .overlap-group {
+    height: 15px;
+    top: -1px;
+  }
+  
+  .busyness.small.level-3 .overlap-group {
+    width: 31px;
+  }
+  
+  .busyness.level-1.small .overlap-group {
+    width: 37px;
+  }
+  
+  .busyness.small.level-2 .overlap-group {
+    width: 37px;
+  }
+  
+  .busyness.level-1 .rectangle {
+    width: 37px;
+  }
+  
+  .busyness.large .rectangle {
+    height: 20px;
+    top: 0;
+  }
+  
+  .busyness.small .rectangle {
+    height: 14px;
+    top: 1px;
+  }
+  
+  .busyness.large.level-2 .rectangle {
+    width: 58px;
+  }
+  
+  .busyness.small.level-3 .rectangle {
+    width: 31px;
+  }
+  
+  .busyness.level-3.large .rectangle {
+    width: 47px;
+  }
+  
+  .busyness.small.level-2 .rectangle {
+    width: 37px;
+  }
+  
+  .busyness.level-1 .div {
+    background-color: var(--crowded-amber);
+  }
+  
+  .busyness.large .div {
+    border-radius: 4px;
+    height: 8px;
+    left: 9px;
+    top: 6px;
+    width: 8px;
+  }
+  
+  .busyness.level-3 .div {
+    background-color: var(--red-100);
+  }
+  
+  .busyness.small .div {
+    border-radius: 3px;
+    height: 6px;
+    left: 6px;
+    top: 5px;
+    width: 6px;
+  }
+  
+  .busyness.level-2 .div {
+    background-color: var(--crowded-amber);
+  }
+  
+  .busyness.level-1 .busy {
+    color: var(--crowded-amber);
+  }
+  
+  .busyness.large .busy {
+    font-size: 12px;
+    left: 22px;
+    top: 2px;
+    width: 70px;
+  }
+  
+  .busyness.level-3 .busy {
+    color: var(--red-100);
+  }
+  
+  .busyness.small .busy {
+    font-size: 8px;
+    left: 15px;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .busyness.level-2 .busy {
+    color: var(--crowded-amber);
+  }
+  

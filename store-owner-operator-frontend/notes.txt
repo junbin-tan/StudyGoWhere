@@ -1,0 +1,65 @@
+import React from "react";
+import SideBar from "../Components/SideBar/SideBar";
+import { Breadcrumbs } from "@mui/material";
+import { Link } from "react-router-dom";
+import { VenueCard } from "../Components/Venues/VenueCard/VenueCard";
+
+function handleClick(event) {
+  event.preventDefault();
+  console.info("You clicked a breadcrumb");
+}
+
+/* 
+    TODO:
+    automate active last breadcrum 
+    to highlight final element
+    in array 
+*/
+
+function ActiveLastBreadcrumb() {
+  return (
+    <div role="presentation" onClick={handleClick}>
+      <Breadcrumbs aria-label="breadcrumb">
+        <Link underline="hover" className="text-lightgray-100" to="/venues">
+          Home
+        </Link>
+        <Link
+          underline="hover"
+          className="text-lightgray-100"
+          href="/venues"
+          aria-current="page"
+        >
+          Venues
+        </Link>
+        <Link
+          underline="hover"
+          className="text-brown-90"
+          href="/Home/venue"
+          aria-current="page"
+        >
+          Add new venues
+        </Link>
+      </Breadcrumbs>
+    </div>
+  );
+}
+
+const AddVenue = () => {
+  return (
+    <>
+      <div className="flex flex-row bg-lightgray-80 overflow-x-hidden h-full">
+        <SideBar />
+        <div className="bg-lightgray-80 w-full overflow-y-visible ">
+          <div className="main-content flex flex-col gap-y-20 translate-y-32 translate-x-20">
+            <div className="page-title">
+              <p className="title-24pt ">Add New Venue</p>
+              <ActiveLastBreadcrumb />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default AddVenue;

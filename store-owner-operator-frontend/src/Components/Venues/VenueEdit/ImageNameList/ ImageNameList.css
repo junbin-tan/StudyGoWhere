@@ -1,0 +1,11 @@
+.image-name-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-name-item {
+    cursor: grab;
+    padding: 5px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "762666672886",
+    "project_id": "imagestorage-a2728",
+    "storage_bucket": "imagestorage-a2728.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762666672886:android:5bdfd3d7e685792cf4c2d7",
+        "android_client_info": {
+          "package_name": "com.example.student_frontend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPRP2u_s2HiyJKp8xVyNsOMMJD2onyaFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,495 @@
+/* for text styling standardization */
+:root {
+    --brown-100: rgba(101, 69, 31, 1);
+    --brown-40: rgba(234, 198, 150, 1);
+    --brown-60: rgba(200, 174, 125, 1);
+    --brown-90: rgba(118, 88, 39, 1);
+    /* --custom-yellow: #1F737A; */
+    --custom-yellow: #E04F53; 
+    --light-red: rgba(255, 225, 225, 0.778);
+    /* not really yellow, just our primary color (blue rn) */
+    /* --custom-yellow: #FB9300; */
+    --chill-green: rgba(92, 217, 49, 1);
+    --crowded-amber: rgba(239, 180, 91, 1);
+    --gray-100: rgba(36, 36, 36, 1);
+    --gray-70: rgba(155, 155, 155, 1);
+    --gray-80: rgba(105, 105, 105, 1);
+    --gray-90: rgba(69, 69, 69, 1);
+    --large-none-bold-font-family: "Montserrat", Helvetica;
+    --large-none-bold-font-size: 18px;
+    --large-none-bold-font-style: normal;
+    --large-none-bold-font-weight: 700;
+    --large-none-bold-letter-spacing: 0px;
+    --large-none-bold-line-height: 18px;
+    --large-none-medium-font-family: "Montserrat", Helvetica;
+    --large-none-medium-font-size: 18px;
+    --large-none-medium-font-style: normal;
+    --large-none-medium-font-weight: 500;
+    --large-none-medium-letter-spacing: 0px;
+    --large-none-medium-line-height: 18px;
+    --large-none-regular-font-family: "Montserrat", Helvetica;
+    --large-none-regular-font-size: 18px;
+    --large-none-regular-font-style: normal;
+    --large-none-regular-font-weight: 400;
+    --large-none-regular-letter-spacing: 0px;
+    --large-none-regular-line-height: 18px;
+    --large-normal-bold-font-family: "Montserrat", Helvetica;
+    --large-normal-bold-font-size: 18px;
+    --large-normal-bold-font-style: normal;
+    --large-normal-bold-font-weight: 700;
+    --large-normal-bold-letter-spacing: 0px;
+    --large-normal-bold-line-height: 24px;
+    --large-normal-medium-font-family: "Montserrat", Helvetica;
+    --large-normal-medium-font-size: 18px;
+    --large-normal-medium-font-style: normal;
+    --large-normal-medium-font-weight: 500;
+    --large-normal-medium-letter-spacing: 0px;
+    --large-normal-medium-line-height: 24px;
+    --large-normal-regular-font-family: "Montserrat", Helvetica;
+    --large-normal-regular-font-size: 18px;
+    --large-normal-regular-font-style: normal;
+    --large-normal-regular-font-weight: 400;
+    --large-normal-regular-letter-spacing: 0px;
+    --large-normal-regular-line-height: 24px;
+    --large-tight-bold-font-family: "Montserrat", Helvetica;
+    --large-tight-bold-font-size: 18px;
+    --large-tight-bold-font-style: normal;
+    --large-tight-bold-font-weight: 700;
+    --large-tight-bold-letter-spacing: 0px;
+    --large-tight-bold-line-height: 20px;
+    --large-tight-medium-font-family: "Montserrat", Helvetica;
+    --large-tight-medium-font-size: 18px;
+    --large-tight-medium-font-style: normal;
+    --large-tight-medium-font-weight: 500;
+    --large-tight-medium-letter-spacing: 0px;
+    --large-tight-medium-line-height: 20px;
+    --large-tight-regular-font-family: "Montserrat", Helvetica;
+    --large-tight-regular-font-size: 18px;
+    --large-tight-regular-font-style: normal;
+    --large-tight-regular-font-weight: 400;
+    --large-tight-regular-letter-spacing: 0px;
+    --large-tight-regular-line-height: 20px;
+    --light-gray100: rgba(187, 187, 187, 1);
+    --light-gray80: rgba(249, 249, 249, 1);
+    --light-gray90: rgba(236, 236, 236, 1);
+    --mrtbrown: rgba(148, 93, 49, 1);
+    --mrtcircle: rgba(236, 160, 68, 1);
+    --mrtdowntown: rgba(35, 93, 163, 1);
+    --mrtgreen: rgba(66, 147, 84, 1);
+    --mrtpurple: rgba(133, 71, 149, 1);
+    --mrtred: rgba(209, 60, 50, 1);
+    --red-100: rgba(228, 81, 70, 1);
+    --red-70: rgba(228, 164, 160, 1);
+    --red-80: rgba(228, 136, 127, 1);
+    --red-90: rgba(229, 108, 98, 1);
+    --regular-none-bold-font-family: "Montserrat-Bold", Helvetica;
+    --regular-none-bold-font-size: 16px;
+    --regular-none-bold-font-style: normal;
+    --regular-none-bold-font-weight: 700;
+    --regular-none-bold-letter-spacing: 0px;
+    --regular-none-bold-line-height: 16px;
+    --regular-none-medium-font-family: "Montserrat-Medium", Helvetica;
+    --regular-none-medium-font-size: 16px;
+    --regular-none-medium-font-style: normal;
+    --regular-none-medium-font-weight: 500;
+    --regular-none-medium-letter-spacing: 0px;
+    --regular-none-medium-line-height: 16px;
+    --regular-none-regular-font-family: "Montserrat-Regular", Helvetica;
+    --regular-none-regular-font-size: 16px;
+    --regular-none-regular-font-style: normal;
+    --regular-none-regular-font-weight: 400;
+    --regular-none-regular-letter-spacing: 0px;
+    --regular-none-regular-line-height: 16px;
+    --regular-tight-bold-font-family: "Montserrat-Bold", Helvetica;
+    --regular-tight-bold-font-size: 16px;
+    --regular-tight-bold-font-style: normal;
+    --regular-tight-bold-font-weight: 700;
+    --regular-tight-bold-letter-spacing: 0px;
+    --regular-tight-bold-line-height: 20px;
+    --regular-tight-medium-font-family: "Montserrat-Medium", Helvetica;
+    --regular-tight-medium-font-size: 16px;
+    --regular-tight-medium-font-style: normal;
+    --regular-tight-medium-font-weight: 500;
+    --regular-tight-medium-letter-spacing: 0px;
+    --regular-tight-medium-line-height: 20px;
+    --regular-tight-regular-font-family: "Montserrat-Regular", Helvetica;
+    --regular-tight-regular-font-size: 16px;
+    --regular-tight-regular-font-style: normal;
+    --regular-tight-regular-font-weight: 400;
+    --regular-tight-regular-letter-spacing: 0px;
+    --regular-tight-regular-line-height: 20px;
+    --shadow-1: 0px 4px 20px 2px rgba(142, 140, 110, 0.2);
+    --shadow-2: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    --small-none-bold-font-family: "Montserrat-Bold", Helvetica;
+    --small-none-bold-font-size: 14px;
+    --small-none-bold-font-style: normal;
+    --small-none-bold-font-weight: 700;
+    --small-none-bold-letter-spacing: 0px;
+    --small-none-bold-line-height: 14px;
+    --small-none-medium-font-family: "Montserrat-Medium", Helvetica;
+    --small-none-medium-font-size: 14px;
+    --small-none-medium-font-style: normal;
+    --small-none-medium-font-weight: 500;
+    --small-none-medium-letter-spacing: 0px;
+    --small-none-medium-line-height: 14px;
+    --small-none-regular-font-family: "Montserrat-Regular", Helvetica;
+    --small-none-regular-font-size: 14px;
+    --small-none-regular-font-style: normal;
+    --small-none-regular-font-weight: 400;
+    --small-none-regular-letter-spacing: 0px;
+    --small-none-regular-line-height: 14px;
+    --tinier-none-bold-font-family: "Montserrat-Bold", Helvetica;
+    --tinier-none-bold-font-size: 10px;
+    --tinier-none-bold-font-style: normal;
+    --tinier-none-bold-font-weight: 700;
+    --tinier-none-bold-letter-spacing: 0px;
+    --tinier-none-bold-line-height: 12px;
+    --tinier-none-medium-font-family: "Montserrat-Medium", Helvetica;
+    --tinier-none-medium-font-size: 10px;
+    --tinier-none-medium-font-style: normal;
+    --tinier-none-medium-font-weight: 500;
+    --tinier-none-medium-letter-spacing: 0px;
+    --tinier-none-medium-line-height: 12px;
+    --tiny-none-bold-font-family: "Montserrat-Bold", Helvetica;
+    --tiny-none-bold-font-size: 12px;
+    --tiny-none-bold-font-style: normal;
+    --tiny-none-bold-font-weight: 700;
+    --tiny-none-bold-letter-spacing: 0px;
+    --tiny-none-bold-line-height: 12px;
+    --tiny-none-medium-font-family: "Montserrat-Medium", Helvetica;
+    --tiny-none-medium-font-size: 12px;
+    --tiny-none-medium-font-style: normal;
+    --tiny-none-medium-font-weight: 500;
+    --tiny-none-medium-letter-spacing: 0px;
+    --tiny-none-medium-line-height: 12px;
+    --tiny-none-regular-font-family: "Montserrat-Regular", Helvetica;
+    --tiny-none-regular-font-size: 12px;
+    --tiny-none-regular-font-style: normal;
+    --tiny-none-regular-font-weight: 400;
+    --tiny-none-regular-letter-spacing: 0px;
+    --tiny-none-regular-line-height: 12px;
+    --title-24pt-font-family: "Montserrat-Bold", Helvetica;
+    --title-24pt-font-size: 24px;
+    --title-24pt-font-style: normal;
+    --title-24pt-font-weight: 700;
+    --title-24pt-letter-spacing: 0px;
+    --title-24pt-line-height: 32px;
+    --title-32pt-font-family: "Montserrat-Bold", Helvetica;
+    --title-32pt-font-size: 32px;
+    --title-32pt-font-style: normal;
+    --title-32pt-font-weight: 700;
+    --title-32pt-letter-spacing: 0px;
+    --title-32pt-line-height: 36px;
+    --title-48pt-font-family: "Montserrat-Bold", Helvetica;
+    --title-48pt-font-size: 48px;
+    --title-48pt-font-style: normal;
+    --title-48pt-font-weight: 700;
+    --title-48pt-letter-spacing: 0px;
+    --title-48pt-line-height: 56px;
+    --white: rgba(255, 255, 255, 1);
+}
+
+/* set default font-family as Montserrat */
+html {
+    font-family: Montserrat, sans-serif;
+}
+
+/* follow Figma */
+.study-go-where-icon-font {
+    font-family: 'Playpen Sans', sans-serif;
+    /* font-family: 'Philosopher', sans-serif; */
+    font-style: italic;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.landing-background {
+    width: 100%;
+    z-index: -100;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* This creates a semi-transparent black overlay */
+
+}
+
+/* for average price */
+.ap-selected{
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--custom-yellow);
+}
+
+.ap {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--light-gray100);
+}
+
+.ap:hover{
+    font-size: 24px;
+    color: var(--custom-yellow);
+}
+
+.ap-no-hover {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--light-gray100);
+}
+/* amenities */
+.amenity {
+    color: var(--gray-70);
+    padding: 10px;
+    border: solid 3px var(--gray-70);   
+    border-radius: 20px;
+    min-width: 80px;
+    text-align: center;
+    width: fit-content;
+    cursor: pointer;
+    font-weight: 600;
+}
+.amenity:hover {
+    color: var(--custom-yellow);
+    border: solid 3px var(--custom-yellow);
+    background-color: rgba(255, 174, 74, 0.349);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.amenity-selected:hover {
+    color: var(--gray-70);
+    border: solid 3px var(--gray-70);
+    background-color: rgb(205, 205, 205);
+}
+
+.amenity-selected {
+    color: var(--custom-yellow);
+    border: solid 3px var(--custom-yellow);
+    background-color: rgba(255, 174, 74, 0.349);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tag-default {
+    padding: .5em 1em;
+    min-width: 80px;
+    width: fit-content;
+    border-radius: 30px;
+    border: solid 1px var(--gray-70);   
+    color: var(--gray-70);
+}
+
+.tag-default:hover{
+    padding: .5em 1em;
+    width: fit-content;
+    border-radius: 30px;
+    color: var(--custom-yellow);
+    border: solid 1px var(--custom-yellow);
+    font-weight: 500;
+}
+
+.tag-default:active{
+    padding: .5em 1em;
+    width: fit-content;
+    border-radius: 30px;
+    color: var(--custom-yellow);
+    background-color: rgba(255, 181, 181, 0.778);
+    font-weight: 600;
+}
+
+.error {
+    font-family: "Open Sans", sans-serif;
+    color: #d32f2f;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    padding-left: 1rem;
+}
+
+/* className={`tag px-2 py-2 w-fit text-sm font-semibold text-brown-80
+    //   rounded-full bg-brown-80 bg-opacity-20
+    //   border-solid border-4 border-brown-80
+    //   hover:bg-brown-90 hover:bg-opacity-50 hover:${
+    //     selected ? "bg-brown-90 bg-opacity-25" : ""
+    //   }`} */
+
+.title-48pt {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    /* 116.667% */
+}
+
+.title-32pt {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 112.5% */
+}
+
+.title-24pt {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 133.333% */
+}
+
+.large-bold {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    /* 100% */
+}
+
+.large-medium {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    /* 100% */
+}
+
+.large-regular {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 100% */
+}
+
+.regular-bold {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+}
+
+.regular-medium {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+.regular-regular {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.small-bold {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    /* 100% */
+}
+
+.small-medium {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    /* 100% */
+}
+
+.small-regular {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    /* 100% */
+}
+
+.tiny-bold {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    /* 100% */
+}
+
+.tiny-medium {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    /* 100% */
+}
+
+.tiny-regular {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    /* 100% */
+}
+
+
+
+
+.tiny-regular {
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.line {
+    width: 100%;
+    height: .5px;
+    background-color: #9B9B9B;
+    /* Adjust the color as needed */
+}
+
+.no-show {
+    display: none;
+}
+
+.disabled-container {
+    position: relative;
+}
+.disabled-container::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity to control the level of "disabled" appearance */
+    pointer-events: none; /* Prevent interactions with elements beneath */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10; /* Ensure the overlay is above the content */
+}
+
+th {
+    padding: 10px 15px;
+    text-align: left;
+    /* border: 1px solid #9B9B9B; */
+}
+
+td {
+    padding: 10px 15px;
+    min-width: 200px;
+    text-align: left;
+    /* border: 1px solid #9B9B9B; */
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }

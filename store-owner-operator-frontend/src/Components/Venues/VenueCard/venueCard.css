@@ -1,0 +1,111 @@
+.venue-card {
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 164px;
+    position: relative;
+    width: 257px;
+  }
+
+.venue-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.00) 100%);
+  opacity: 0; /* Initially, hide the pseudo-element */
+  transition: opacity 0.2s ease-in-out; /* Add a transition for smooth effect */
+  z-index: 1;
+}
+
+.venue-card:hover::before {
+  opacity: 1; /* Show the pseudo-element on hover */
+}
+  
+  .venue-card .text-wrapper-2 {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    letter-spacing: var(--large-none-medium-letter-spacing);
+    line-height: var(--large-none-medium-line-height);
+    position: absolute;
+    text-align: center;
+    top: 72px;
+    white-space: nowrap;
+  }
+  
+  .venue-card .busyness-instance {
+    left: 16px !important;
+    position: absolute !important;
+    top: 14px !important;
+  }
+  
+  .venue-card .store-status {
+    background-color: #5cd830;
+    border-radius: 5px;
+    height: 28px;
+    left: 180px;
+    position: absolute;
+    top: 122px;
+    width: 65px;
+  }
+  
+  .venue-card .text-wrapper-3 {
+    color: var(--white);
+    font-family: "Google Sans-Bold", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    left: 3px;
+    letter-spacing: 0;
+    line-height: 12px;
+    position: absolute;
+    text-align: center;
+    top: 7px;
+    width: 59px;
+  }
+  
+  /* Tooltip container */
+.tooltip {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.1rem/* 8px */;
+  padding-bottom: 0.1rem/* 8px */;
+  padding-left: 0.5rem/* 12px */;
+  padding-right: 0.5rem/* 12px */;
+  border-radius: 0.375rem/* 6px */;
+  background-color: white;
+  gap: 0.5rem;
+  width: 8rem/* 176px */;
+  min-width: fit-content;
+  align-items: center;
+  z-index: 100;
+}
+
+/* tooltip flex flex-row border-2 py-2 px-3 rounded-md items-center bg-white gap-2 w-44 min-w-fit */
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  border: 1px solid #606060;
+  background-color: white;
+  color: #606060;
+  text-align: center;
+  padding: .2rem;
+  border-radius: 6px;
+  
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 0%;
+  
+  font-size: small;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
